@@ -21,12 +21,6 @@ def home():
                 "- 자치구별 평균 가격 예측 그래프 추세 \n"
                 "- 사용한 알고리즘 : metad의 prophet \n")
 
-#def unique(lst):
-#    x=np.array(lst)
-#    return np.unique(x)
-fpath = os.path.join(os.getcwd(), "Nanum_Gothic/NanumGothic.ttf")
-prop = fm.FontProperties(fname=fpath)
-
 def predictType(total_df) :
     # 한글 폰트 설정
     path = 'NanumGothic-Bold.ttf'
@@ -38,17 +32,6 @@ def predictType(total_df) :
     periods = int(st.number_input('향후 예측 기간을 지정하세요(1일 ~ 30일)',
                                   min_value=1, max_value=30, step=1))
     
-#    font_dirs = [os.getcwd()+'/Nanum_Gothic']
-#    font_files = fm.findSystemFonts(fontpaths=font_dirs)
-    
-#    for font_file in font_files:
-#        fm.fonManager.addfont(font_file)
-#    fm._load_fontmanager(try_read_cache=False)
-    
-#    fontNames = [f.name for f in fm.fontManager.ttflist]
-#    fontname = st.selectbox("폰트 선택", unique(fontNames))
-    
-#    plt.rc('font', family=fontname)
     
     fig, ax = plt.subplots(figsize=(10, 6), sharex=True, ncols=2, nrows=2)
     
