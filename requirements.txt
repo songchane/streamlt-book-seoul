@@ -9,7 +9,6 @@ plotly
 scikit-learn
 streamlit
 yfinance
-lightgb,
 statsmodels
 streamlit-option-menu
 geopandas
