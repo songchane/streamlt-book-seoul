@@ -1,14 +1,10 @@
-holidays==0.24
 prophet==1.1.2
-sktime
-pmdarima
 pandas
 matplotlib
 seaborn
 plotly
 scikit-learn
 streamlit
-yfinance
 statsmodels
 streamlit-option-menu
 geopandas
